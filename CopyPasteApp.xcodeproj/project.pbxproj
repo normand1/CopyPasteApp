@@ -14,6 +14,7 @@
 		BB6A2C091AA187F900E74B7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6A2C081AA187F900E74B7F /* Images.xcassets */; };
 		BB6A2C0C1AA187F900E74B7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6A2C0A1AA187F900E74B7F /* LaunchScreen.xib */; };
 		BB6A2C181AA187F900E74B7F /* CopyPasteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A2C171AA187F900E74B7F /* CopyPasteAppTests.swift */; };
+		BB7055131AA18C4D00168B3A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BB7055121AA18C4D00168B3A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		BB6A2C111AA187F900E74B7F /* CopyPasteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyPasteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6A2C161AA187F900E74B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB6A2C171AA187F900E74B7F /* CopyPasteAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyPasteAppTests.swift; sourceTree = "<group>"; };
+		BB7055121AA18C4D00168B3A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				BB6A2C0A1AA187F900E74B7F /* LaunchScreen.xib */,
 				BB6A2C001AA187F900E74B7F /* CopyPasteApp.xcdatamodeld */,
 				BB6A2BFC1AA187F900E74B7F /* Supporting Files */,
+				BB7055121AA18C4D00168B3A /* .gitignore */,
 			);
 			path = CopyPasteApp;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7055131AA18C4D00168B3A /* .gitignore in Resources */,
 				BB6A2C071AA187F900E74B7F /* Main.storyboard in Resources */,
 				BB6A2C0C1AA187F900E74B7F /* LaunchScreen.xib in Resources */,
 				BB6A2C091AA187F900E74B7F /* Images.xcassets in Resources */,
@@ -413,6 +417,7 @@
 				BB6A2C1D1AA187F900E74B7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB6A2C1E1AA187F900E74B7F /* Build configuration list for PBXNativeTarget "CopyPasteAppTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				BB6A2C201AA187F900E74B7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
