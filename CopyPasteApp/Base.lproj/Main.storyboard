@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CopyPasteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,78 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Spot 2" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h59-Zp-28S">
+                                <rect key="frame" x="31" y="215" width="538" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="spot2EndEditing:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="tlR-j6-smu"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Spot 4" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RHw-rr-KNZ">
+                                <rect key="frame" x="31" y="355" width="538" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="spot4EndEditing:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="Vha-P5-Dkx"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Spot 3" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLl-9T-oz3">
+                                <rect key="frame" x="31" y="285" width="538" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="spot3EndEditing:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="avG-Na-qLK"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Spot 1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77i-iN-BPf">
+                                <rect key="frame" x="31" y="145" width="538" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="spot1EndEditing:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="vsB-uW-FIf"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Spot 5" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSr-su-HNh">
+                                <rect key="frame" x="31" y="425" width="538" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="spot5EndEditing:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="zxq-bc-KhR"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BSr-su-HNh" firstAttribute="centerX" secondItem="PLl-9T-oz3" secondAttribute="centerX" id="GIX-NF-jY3"/>
+                            <constraint firstItem="h59-Zp-28S" firstAttribute="top" secondItem="77i-iN-BPf" secondAttribute="bottom" constant="40" id="IbO-JM-CD8"/>
+                            <constraint firstItem="77i-iN-BPf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="Mlj-Fg-pIO"/>
+                            <constraint firstItem="h59-Zp-28S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="NBd-27-E4T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PLl-9T-oz3" secondAttribute="trailing" constant="15" id="NcF-Ix-O1D"/>
+                            <constraint firstItem="RHw-rr-KNZ" firstAttribute="top" secondItem="PLl-9T-oz3" secondAttribute="bottom" constant="40" id="PqP-na-Tpq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RHw-rr-KNZ" secondAttribute="trailing" constant="15" id="UIC-6s-QRT"/>
+                            <constraint firstItem="BSr-su-HNh" firstAttribute="centerX" secondItem="77i-iN-BPf" secondAttribute="centerX" id="W60-14-YQg"/>
+                            <constraint firstItem="BSr-su-HNh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="WcQ-nD-Gxk"/>
+                            <constraint firstItem="77i-iN-BPf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="125" id="YXR-je-wcy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h59-Zp-28S" secondAttribute="trailing" constant="15" id="YjB-nj-Xp6"/>
+                            <constraint firstItem="RHw-rr-KNZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="ZdZ-Dw-Ra8"/>
+                            <constraint firstItem="PLl-9T-oz3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="bDW-74-AQQ"/>
+                            <constraint firstItem="BSr-su-HNh" firstAttribute="top" secondItem="RHw-rr-KNZ" secondAttribute="bottom" constant="40" id="cWx-1E-IPw"/>
+                            <constraint firstItem="BSr-su-HNh" firstAttribute="centerX" secondItem="RHw-rr-KNZ" secondAttribute="centerX" id="h1P-kR-QOE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="77i-iN-BPf" secondAttribute="trailing" constant="15" id="kQU-a3-Kob"/>
+                            <constraint firstItem="BSr-su-HNh" firstAttribute="centerX" secondItem="h59-Zp-28S" secondAttribute="centerX" id="uTT-hy-cqW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BSr-su-HNh" secondAttribute="trailing" constant="15" id="wRQ-DB-2m6"/>
+                            <constraint firstItem="PLl-9T-oz3" firstAttribute="top" secondItem="h59-Zp-28S" secondAttribute="bottom" constant="40" id="xYH-oP-po0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="spot1Field" destination="77i-iN-BPf" id="xj5-O9-s3L"/>
+                        <outlet property="spot2Field" destination="h59-Zp-28S" id="FPy-mF-gPe"/>
+                        <outlet property="spot3Field" destination="PLl-9T-oz3" id="PrB-20-KEd"/>
+                        <outlet property="spot4Field" destination="RHw-rr-KNZ" id="9kD-bJ-Rld"/>
+                        <outlet property="spot5Field" destination="BSr-su-HNh" id="FP6-4e-5fe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
